@@ -30,7 +30,7 @@ export const AuthProvider = ({children}: AuthContextProps) => {
     const signInWithGoogle = async () => {
         try {
             const provider = new GoogleAuthProvider();
-            await signInWithPopup(auth, provider); // ✅ Попап вместо редиректа
+            await signInWithPopup(auth, provider);
         } catch (error) {
             console.error('Ошибка входа через Google:', error);
         }
